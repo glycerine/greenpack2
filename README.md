@@ -1,5 +1,21 @@
-greenpack news, April 2019
+greenpack2 news, October 2024
 ===============
+
+October 2024: Go-module compatibility
+
+Okay. Better later than never. We've made a Go-module
+compatible version of greenpack called greenpack2.
+Simply put: greenpack2 was cloned from greenpack, and
+all the git tags were renamed so that we can be Go-module compatible. 
+A few of them were deleted since they didn't follow the
+right format, but they were ancient history anyhow.
+
+Version v0.514.0 starts with greenpack2 instead of greenpack. Any later version
+of this repo will also be called greenpack2. Note that the
+name of the binary also changed from greenpack to greenpack2,
+and thus `//go:generate greenpack2` must be written into files now.
+
+April 2019:
 
 Version 5.0.9 includes native support for time.Duration serialization.
 
