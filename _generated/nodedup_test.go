@@ -3,7 +3,7 @@ package _generated
 import (
 	"bytes"
 	"fmt"
-	"github.com/glycerine/greenpack/msgp"
+	"github.com/glycerine/greenpack2/msgp"
 	"testing"
 )
 

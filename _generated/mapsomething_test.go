@@ -12,7 +12,7 @@ type Row struct {
 	T int64         `msg:"T"`
 }
 
-// https://github.com/glycerine/greenpack/issues/1
+// https://github.com/glycerine/greenpack2/issues/1
 func TestMarshalMapOfConcreteType(t *testing.T) {
 
 	m := make(map[string][]float64)

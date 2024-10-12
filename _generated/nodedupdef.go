@@ -2,7 +2,7 @@ package _generated
 
 import (
 	"fmt"
-	"github.com/glycerine/greenpack/msgp"
+	"github.com/glycerine/greenpack2/msgp"
 )
 
 //go:generate greenpack -no-dedup -o nodedup_generated.go

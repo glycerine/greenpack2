@@ -1,7 +1,7 @@
 package gen
 
 import (
-	"github.com/glycerine/greenpack/cfg"
+	"github.com/glycerine/greenpack2/cfg"
 	"io"
 	"text/template"
 )

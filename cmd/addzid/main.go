@@ -28,7 +28,7 @@ func use() {
 	fmt.Fprintf(os.Stderr, "     #   -OVERWRITE modify .go files in-place, adding zid tags (by default\n     #       we write to the to -o dir).\n")
 	fmt.Fprintf(os.Stderr, "     #\n     # required: at least one .go source file for struct definitions.\n     #  note: the .go source file to process must be listed last, after any options.\n")
 	fmt.Fprintf(os.Stderr, "     #\n")
-	fmt.Fprintf(os.Stderr, "     # [1] https://github.com/glycerine/greenpack \n")
+	fmt.Fprintf(os.Stderr, "     # [1] https://github.com/glycerine/greenpack2 \n")
 	fmt.Fprintf(os.Stderr, "\n")
 	os.Exit(1)
 }

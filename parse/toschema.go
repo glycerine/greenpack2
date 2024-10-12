@@ -3,8 +3,8 @@ package parse
 import (
 	"fmt"
 
-	"github.com/glycerine/greenpack/gen"
-	"github.com/glycerine/greenpack/green"
+	"github.com/glycerine/greenpack2/gen"
+	"github.com/glycerine/greenpack2/green"
 	//"github.com/shurcooL/go-goon"
 )
 

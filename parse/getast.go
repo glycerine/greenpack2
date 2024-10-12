@@ -16,10 +16,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/glycerine/greenpack/cfg"
-	"github.com/glycerine/greenpack/gen"
+	"github.com/glycerine/greenpack2/cfg"
+	"github.com/glycerine/greenpack2/gen"
 	//	"github.com/shurcooL/go-goon"
-	"github.com/glycerine/greenpack/msgp"
+	"github.com/glycerine/greenpack2/msgp"
 	"golang.org/x/tools/go/loader"
 )
 

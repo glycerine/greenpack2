@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	cv "github.com/glycerine/goconvey/convey"
-	"github.com/glycerine/greenpack/msgp"
+	"github.com/glycerine/greenpack2/msgp"
 )
 
 func Test012AllTuple(t *testing.T) {

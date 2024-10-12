@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/glycerine/greenpack/cfg"
+	"github.com/glycerine/greenpack2/cfg"
 )
 
 const (

@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/glycerine/greenpack/green"
+	"github.com/glycerine/greenpack2/green"
 )
 
 // This code defines the type declaration tree.

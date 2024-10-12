@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/glycerine/greenpack/msgp"
+	"github.com/glycerine/greenpack2/msgp"
 	"github.com/shurcooL/go-goon"
 )
 

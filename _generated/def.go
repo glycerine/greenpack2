@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/glycerine/greenpack/msgp"
+	"github.com/glycerine/greenpack2/msgp"
 )
 
 //go:generate greenpack -o generated.go

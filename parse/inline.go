@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/glycerine/greenpack/gen"
+	"github.com/glycerine/greenpack2/gen"
 )
 
 // This file defines when and how we
@@ -148,7 +148,7 @@ func (f *FileSet) propInline() {
 }
 
 const fatalloop = `detected infinite recursion in inlining loop!
-Please file a bug at github.com/glycerine/greenpack/issues!
+Please file a bug at github.com/glycerine/greenpack2/issues!
 Thanks!
 `
 

@@ -76,7 +76,7 @@
 // 		write schema header to this file; - for stdout
 //
 //
-// For more information, please read README.md, and the wiki at github.com/glycerine/greenpack
+// For more information, please read README.md, and the wiki at github.com/glycerine/greenpack2
 //
 package main
 
@@ -87,10 +87,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/glycerine/greenpack/cfg"
-	"github.com/glycerine/greenpack/gen"
-	"github.com/glycerine/greenpack/parse"
-	"github.com/glycerine/greenpack/printer"
+	"github.com/glycerine/greenpack2/cfg"
+	"github.com/glycerine/greenpack2/gen"
+	"github.com/glycerine/greenpack2/parse"
+	"github.com/glycerine/greenpack2/printer"
 )
 
 func main() {

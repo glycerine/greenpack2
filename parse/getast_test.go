@@ -7,8 +7,8 @@ import (
 	"sort"
 
 	cv "github.com/glycerine/goconvey/convey"
-	"github.com/glycerine/greenpack/cfg"
-	"github.com/glycerine/greenpack/gen"
+	"github.com/glycerine/greenpack2/cfg"
+	"github.com/glycerine/greenpack2/gen"
 	"testing"
 )
 
