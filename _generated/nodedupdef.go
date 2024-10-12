@@ -5,7 +5,7 @@ import (
 	"github.com/glycerine/greenpack2/msgp"
 )
 
-//go:generate greenpack -no-dedup -o nodedup_generated.go
+//go:generate greenpack2 -no-dedup -o nodedup_generated.go
 
 type Target2 struct {
 	ID int

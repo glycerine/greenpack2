@@ -1,6 +1,6 @@
 package testdata
 
-//go:generate greenpack  -omit-clue
+//go:generate greenpack2  -omit-clue
 
 type OmitClueTestStruct struct {
 	S string `zid:"0"`

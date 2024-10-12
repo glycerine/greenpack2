@@ -1,6 +1,6 @@
 package testdata
 
-//go:generate greenpack -alltuple
+//go:generate greenpack2 -alltuple
 
 type TupleByDefaultTestStruct struct {
 	S string `zid:"0"`

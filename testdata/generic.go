@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-//go:generate greenpack
+//go:generate greenpack2
 
 // should be ignored, but parsed smoothly without complaint.
 type Addable interface {

@@ -6,7 +6,7 @@ import (
 
 var _ = time.Time{}
 
-//go:generate greenpack
+//go:generate greenpack2
 
 // greenpack Issue 6: must be big enough to *NOT* inline.
 type Event struct {

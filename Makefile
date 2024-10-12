@@ -16,7 +16,7 @@ ZGEN = ./green/green_gen.go
 
 SHELL := /bin/bash
 
-BIN = $(GOBIN)/greenpack
+BIN = $(GOBIN)/greenpack2
 
 .PHONY: clean wipe install get-deps bench all dev
 
@@ -48,10 +48,10 @@ test: all
 	# and test addzid
 	go test -v ./cmd/addzid
 	# build and run on testdata/
-	go build -o ./greenpack
+	go build -o ./greenpack2
 	cd testdata && go generate && go test -v
-	./greenpack -file testdata/my.go && go test -v ./testdata/my_gen_test.go ./testdata/my.go ./testdata/my_gen.go
-	./greenpack -file testdata/my.go -o testdata/my_msgp_gen.go -method-prefix=MSGP -tests=false -io=false # test the -method-prefix flag
+	./greenpack2 -file testdata/my.go && go test -v ./testdata/my_gen_test.go ./testdata/my.go ./testdata/my_gen.go
+	./greenpack2 -file testdata/my.go -o testdata/my_msgp_gen.go -method-prefix=MSGP -tests=false -io=false # test the -method-prefix flag
 
 
 bench: all
@@ -59,7 +59,7 @@ bench: all
 	go test -bench . ./_generated
 
 clean:
-	$(RM) $(GGEN) $(MGEN) ./greenpack
+	$(RM) $(GGEN) $(MGEN) ./greenpack2
 
 wipe: clean
 	$(RM) $(BIN)

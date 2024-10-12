@@ -5,7 +5,7 @@ import (
 	//"github.com/glycerine/greenpack2/msgp"
 )
 
-//go:generate greenpack
+//go:generate greenpack2
 
 type SliceOfSlice struct {
 	Matrix [][]byte `zid:"0"`

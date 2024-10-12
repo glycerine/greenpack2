@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-//go:generate greenpack
+//go:generate greenpack2
 
 type Row struct {
 	K []interface{} `msg:"K"`

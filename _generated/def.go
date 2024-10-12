@@ -8,7 +8,7 @@ import (
 	"github.com/glycerine/greenpack2/msgp"
 )
 
-//go:generate greenpack -o generated.go
+//go:generate greenpack2 -o generated.go
 
 // All of the struct
 // definitions in this

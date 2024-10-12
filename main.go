@@ -8,7 +8,7 @@
 // To use it, include the following directive in a
 // go source file with types requiring source generation:
 //
-//     //go:generate greenpack
+//     //go:generate greenpack2
 //
 // The go generate tool should set the proper environment variables for
 // the generator to execute without any command-line flags. However, the
