@@ -1,19 +1,45 @@
-greenpack2 news, October 2024
+greenpack2 news, November 2024 (synced with greenpack README)
 ===============
 
-October 2024: Go-module compatibility
+November 2024: two new things:
 
-Okay. Better later than never. We've made a Go-module
-compatible version of greenpack called greenpack2.
-Simply put: greenpack2 was cloned from greenpack, and
-all the git tags were renamed so that we can be Go-module compatible. 
-A few of them were deleted since they didn't follow the
-right format, but they were ancient history anyhow.
+1) I compare greenpack to CBOR 
+here: https://github.com/glycerine/demo_cbor Long
+story short: CBOR is 3-4x slower than greenpack,
+and comes in too many flavors.
 
-Version v0.514.0 starts with greenpack2 instead of greenpack. Any later version
-of this repo will also be called greenpack2. Note that the
-name of the binary also changed from greenpack to greenpack2,
-and thus `//go:generate greenpack2` must be written into files now.
+2) I wrote an RPC system with modern cryptography
+and greenpack for serialization. Its pretty nice.
+https://github.com/glycerine/rpc25519 performs
+better than the other systems measured. It has better
+latency and throughput -- even when encrypted --
+than gRPC and rpcx.
+
+October 2024: Go-module compatibility. Since the versioning tags here
+were created long before Go modules were invented, it turns out
+the schemes were not compatible. Greenpack was at v5 but the import
+path is never going to have /v5 at the end, so... we'll try
+renaming the tags to v0.xxx.0 style tags, and see what happens.
+
+There is also https://github.com/glycerine/greenpack2 which I know works
+(it is simply a clone with renamed tags and a new module path)
+because it has never been published with a higher version before.
+
+But I'm going to try to make the orignial greenpack (no 2) also
+work, because I import it in a ton of places.
+
+Cool: it seems to work. The only thing is that the idea of the
+"@latest" go module isn't going to work, because Google's proxy
+remembers the old v5.1.2 version that never supported modules.
+Since the v5.1.2 will always look like the "latest" even though
+its been renamed to v0.512.0, you have to manually use the
+v0.xxx.0 versions. Ironically, they are actually the latest.
+
+For reference purposes in case I need to go back to it, 
+list.of.old.tags.txt list.of.rename.operations.txt document
+the old tags and how they were renamed (or many were deleted if not renamed).
+
+The true latest as of this README is `v0.515.0`.
 
 April 2019:
 
